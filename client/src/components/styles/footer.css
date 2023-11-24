@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    justify-content: space-between;
+    background-color: #0a0a0a;
+    color: rgb(196, 196, 196);
+    height: 300px;
+    white-space: nowrap;
+    
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+}
+.logoF{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+.address {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+   
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: Inter, sans-serif;
+    height: 150px;
+    padding-top: 15px;
+}
+
+.nav-container div:hover {
+    color: #ff0000;
+    transition: all 1s ease;
+    cursor: pointer;
+    
+}
+.selected{
+   font-weight: bold;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    height: 150px;
+    padding-top: 15px;
+}
+.about{
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+.ab-out, .privacy, .terms{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    height: 150px;
+    padding-top: 15px;
+}
+.follow{
+    font-size: 30px;
+    font-weight:bold;
+}
+.social-icon{
+    display: inline-block;
+}
+.icoon{
+    height: 20px;
+    width: 20px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+    height: 150px;
+    padding-top: 15px;
+}
+.contact{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.email, .phone, .website{
+    font-size: 15px;
+    
+}

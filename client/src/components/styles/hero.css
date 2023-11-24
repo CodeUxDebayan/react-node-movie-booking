@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap');
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.Hero::-webkit-scrollbar {
+  display: none;
+}
+  .swiper {
+    padding-top: 10px;
+    width: 90vw;
+    height: 700px;
+    z-index: 0;
+  }
+
+
+ .swiper .swiper-pagination-bullet{
+    background-color: rgb(188, 38, 38);
+  }
+  .mySwiper {
+    
+    transition: all 2s ease;
+  }
+.swiper-slide {
+   
+    border-radius: 9px;
+    transition: all 2s ease;
+}
+
+
+.slide{
+  z-index: -1;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.slide::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position the gradient layer relative to the container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(73, 38, 0, 0.85), rgba(28, 28, 28, 0.191));
+  -webkit-backdrop-filter: blur(2px) saturate(70%);
+    backdrop-filter: blur(2px) saturate(70%);
+  z-index: 0; /* Place the gradient layer above the image */
+} 
+ .slide:nth-child(1n){
+  background-image: url('./images/openheimer.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  overflow-x: hidden;
+ }
+
+.text-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 160px;
+  padding-top: 112px;
+  z-index: 1;
+  filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.319));
+}
+.title{
+  color: aliceblue;
+  font-family: Inter, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.duration-year{
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 800;
+  
+}
+
+.description{
+  height: auto;
+  max-width: 500px;
+  font-weight: 500;
+  color: aliceblue;
+  width: 50%;
+  
+}
+.director{
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: 500;
+  z-index: 2;
+}
+.director span{
+  font-weight: 700;
+  
+}
+
+.get-ticket{
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 120px;
+  margin-top: 20px;
+  padding: 7px ;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  background: rgb(255, 0, 0);
+  transition: all 0.2s;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.get-ticket:hover{
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(110, 0, 0), rgb(104, 0, 0) 16.65%, rgb(130, 0, 0) 16.65%, rgba(76, 0, 0, 0.416) 33.3%, rgb(55, 0, 0) 33.3%, rgb(158, 0, 0) 49.95%, rgb(255, 0, 0) 49.95%, rgb(107, 0, 0) 66.6%, rgb(126, 0, 0) 66.6%, rgb(126, 0, 0) 83.25%, rgb(141, 0, 0) 83.25%, rgb(201, 0, 0) 100%, rgb(207, 0, 0) 100%);
+  animation: 6s linear dance6123 infinite;
+  transform: scale(1) translateY(-1px);
+  transition: transform 1s ease;
+ 
+  }
+
+
+  
+@keyframes dance6123 {
+    to {
+      background-position: 120px;
+    }
+  }
+  

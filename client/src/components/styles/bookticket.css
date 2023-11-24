@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap');
+
+.bookticket{
+    color: aliceblue;
+    position: absolute;
+    margin-top: 80px;
+    top: 15%;
+    left: 23%;
+    align-items: center;
+    padding: 20px 30px;
+    
+    width: 1000px;
+    -webkit-backdrop-filter: blur(5px) saturate(20%);
+    backdrop-filter: blur(5px) saturate(20%);
+    background: linear-gradient(rgba(0, 0, 0, 0.614),rgba(0, 0, 0, 0.41))padding-box,
+    linear-gradient(135deg, rgba(255, 0, 0, 0.468),rgba(0, 0, 0, 0.231),rgba(0, 0, 0, 0.277), rgba(139, 0, 0, 0.191)) border-box;
+    border: 2px solid #ff000048;
+    border-radius: 5px;
+}
+.bookticket-hall{
+    height: 50px;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 4px;
+    background-color: #000000;
+    align-items: center;
+    padding-top: 5px;
+}
+.bookticket-hall-time-date{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.bookticket-close{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    margin-left : 16px;
+}
+.bookticket-movie-seats-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+}
+.bookticket-movie-image{
+    width: 30%;
+    height: 350px;
+    border: 1px solid rgb(255, 0, 0);
+}
+.bookticket-movie-title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 10px;
+    width: 40%;
+    height: 350px ;
+
+}
+.bookticket-movie-title{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    
+}
+.bookticket-movie-description{
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.bookticket-movie-seat{
+    width: calc(60% - 24px);
+    height: 300px;
+    display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  grid-auto-flow: row dense;
+  justify-content: space-evenly;
+
+}
+
+
+
+.bookticket-bottom-list{
+    display: flex;
+    
+    font-size: 25px;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+.bookticket-bottom-list div{
+    
+    font-family: Nunito sans, sans serif;
+    font-weight: 800;
+}
+
+.bookticket-confirm{
+    padding: 6px 20px;
+    background-color: #ff0000;
+    color: aliceblue;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.bookticket-confirm:hover{
+    background-color: rgb(203, 18, 18);
+    cursor: pointer;
+}
+.bookticket-confirm:active{
+    background-color: rgb(181, 64, 64);
+}

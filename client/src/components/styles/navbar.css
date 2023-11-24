@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,800&display=swap');
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px; /* Adjust alignment as needed */
+  background-color: #0f0f0f;
+  height: 60px;
+  padding: 10px 90px 5px 90px;
+  z-index: 1;
+  
+  position: fixed;
+  top: 0; /* Adjust this value to set the distance from the top of the viewport */
+  left: 0; /* Adjust this value if needed */
+  right: 0; /* Adjust this value if needed */
+  border-bottom: 1px solid rgb(78, 78, 78);
+  transform-origin: 0%;
+  }
+  
+  /* Navigation links */
+ul {
+    list-style-type: none;
+    justify-content: flex-end;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    transition: all 0.3s ease;
+}
+  
+ul li {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 22px;
+    cursor: pointer;
+    color: #d4d4d4;
+    transition: all 0.3s ease; /* Add a color transition on hover */
+}
+  ul li:hover {
+  color: #ff0000;
+  font-size: 25px; 
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;/* Change the color on hover */
+}
+
+  /* Logo */
+.logo{
+  font-family: 'Bungee Shade', cursive;
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  /*animation: colorChange 5s linear infinite;*/
+   /* Add a color transition on hover */
+  transition: all 1s ease;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  line-height: 60%;
+ 
+  height: 30px;
+  
+  transition: width 1s ease;
+}
+
+
+  
+.logo:hover{
+  cursor: pointer;
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+  font-family: Bungee Shade, sans-serif;
+  left: 30%;
+  animation: myAnim 2s ease-in-out 0s infinite normal forwards;
+  
+}
+  
+@keyframes myAnim {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(2px, -2px);
+	}
+
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	60% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.selected-navlink{
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(255, 0, 0);
+  transition: all 0.3s ease; 
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  border: solid 2px;
+  border-color: rgba(255, 0, 0, 0.399);
+  border-radius: 8px;
+  background-color: transparent;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  width: 120px;
+  transition: all 0.3s ease;
+  animation: fade .5s ease-in;
+  }
+  @keyframes fade{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .search-FOCUSSED{
+    display: flex;
+  flex-direction: row;
+  border: solid 2px;
+  border-color: rgba(255, 0, 0, 0.399);
+  border-radius: 8px;
+  background-color: transparent;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  transition: all 0.3s ease;
+  width: 600px;
+  }
+
+.search-icon{
+  width: 22px; 
+  height: 22px; 
+  color: rgb(255, 255, 255);
+}
+
+.search-icon:hover{
+  cursor: pointer;
+  color: #ff0000;
+  transition: all 0.3s ease-in;
+}
+  
+.search-icon-selected{
+  color: #ff0000;
+  background-color: transparent;
+  width: 24px; 
+  height: 24px;
+  transition: all 0.3s ease-in; 
+}
+
+.search-button{
+  border: none;
+  background-color: transparent;
+  padding-top: 5px;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+  
+
+.react-select__control:focus{
+  outline: none;
+  border-color: transparent;
+}
+ 
+.modal{
+  z-index: 100;
+}
+.hidden{
+  display: none;
+}
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  transition: all 0.3s ease;
+}

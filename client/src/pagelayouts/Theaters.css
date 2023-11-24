@@ -1,0 +1,123 @@
+.theaters{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 40px 80px 40px 80px;
+    margin-top: 70px;
+    cursor: url('./images/cursor-67.png'), auto;
+}
+.theaters-header{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding-right:  20px;
+    gap: 20px;
+}
+.theaters-title{
+ font-size: large;
+ font-weight: bold;
+ font-family: Inter, sans-serif;
+
+}
+
+.theaters-container{
+  display: flex;  
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  width: calc(100% - 40px);
+  padding-right: 20px;
+  height: 500px;
+  -webkit-backdrop-filter: blur(5px) saturate(20%);
+  backdrop-filter: blur(5px) saturate(20%);
+  background-color: rgba(47, 47, 47, 0.215);
+  border-image: linear-gradient(to right, #ff0000, #490000);
+  border-image-slice: 1;
+  border-image-width: 2px;
+  border-image-outset: 0;
+  border-style: solid;
+  border-radius: 20px; /* Adjust the border radius as needed */
+  box-sizing: content-box;
+}
+.theaters-image{
+    width: calc(40% - 20px);
+    height: 95%;
+    border-radius: 10px;
+    background: #490000;
+    margin: 10px;
+}
+.theaters-content{
+    height: 95%;
+    padding : 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.theaters-title{
+    font-size: 55px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+  .theaters-description{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    width: calc(50% - 20px);
+    height: 120px;
+    overflow: hidden;
+    padding-left: 10px;
+  }
+  .theaters-types-available{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: small;
+    color: rgb(125, 125, 125);
+    font-weight: bold;
+  }
+.theaters-location-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.theaters-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80px auto;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 0, 0);
+    white-space: nowrap;
+    align-items: center;
+    padding: 10px 20px; 
+    margin-top: 35px;
+    background-color: black;
+    color: white;
+}
+
+.theaters-location:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    transition: all 1s ease;
+    text-shadow: 0px 4px 5px rgb(0, 0, 0);
+}
+
+.theaters-website{
+    margin-top: 40px;
+    border-radius:25px;
+    background-color: #ff0000;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.theaters-website:hover{
+    transform: translateY(-5px);
+    transition: all 1s ease;
+}

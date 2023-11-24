@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap");
+
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 200px 20px 200px;
+  cursor: pointer;
+  perspective: 500px;
+}
+
+.cardShowing {
+  flex: 0 0 19%;
+  margin: 20px; 
+  -webkit-backdrop-filter: blur(5px) saturate(20%);
+  backdrop-filter: blur(5px) saturate(20%);
+  background: linear-gradient(rgba(0, 0, 0, 0.804),rgba(0, 0, 0, 0.659))padding-box,
+  linear-gradient(135deg, rgba(255, 0, 0, 0.468),rgba(0, 0, 0, 0.231),rgba(0, 0, 0, 0.277), rgba(139, 0, 0, 0.191)) border-box;
+  border: 2px solid transparent;
+  border-radius: 6px; 
+  padding: 10px 10px;
+  height: 500px;
+  font-family: Inter, sans-serif;
+  transition: transform 500ms ease-out;
+  }
+  
+
+
+
+.img {
+  width: 100%;
+  height: 65%;
+  background-color: rgb(61, 111, 129);
+  border-radius: 8px;
+}
+
+
+.cardtitle {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.year {
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.buttonShowing {
+  border: none;
+  background-color: #880000;
+  padding: 5px 10px;
+ 
+  color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 8px 12px 8px 12px;
+  width: auto;
+  height: fixed;
+  box-sizing: border-box;
+  white-space: nowrap;
+  
+}
+.buttonShowing:hover {
+  background-color: #ff0000;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+  padding-top: 10px;
+}
+.star {
+  fill: yellow;
+  margin-top: 18px;
+}
+
+.ratingIcon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.ratingIcon div {
+  margin-top: 18px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nowShowing {
+  display: flex;
+  padding-top: 80px;
+  padding-left: 200px;
+  padding-right: 200px;
+  white-space: nowrap;
+  margin: 10px;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  align-items: flex-end;
+  font-family: Inter, sans-serif;
+  color: aliceblue;
+  cursor: pointer;
+  
+}
+
+
+
+.showing::after{
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 10px;
+  margin: 15px 10px;
+  border-radius: 20px;
+  background-color: #ff0000;
+}
+
+.viewallShow {
+  font-size: 16px;
+  font-weight: 400;
+}
+.viewallShow:hover{
+  text-decoration: underline;
+  text-decoration-color:#ff0000 ;
+  transition: all 1s ease;
+}
+
+.card-for-show{
+  -webkit-backdrop-filter: blur(5px) saturate(20%);
+  backdrop-filter: blur(5px) saturate(20%);
+  background-color: rgba(49, 49, 49, 0.261);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 920px;
+  height: 445px;
+  z-index: 99;
+  top: 25% ;
+  left: 25%;
+  position: absolute;
+  border-radius: 10px;
+  
+}
+
+.modalCard{
+  
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.modalcontainer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 20px 20px 20px;
+  
+}
+
+.modalimage{
+  width: 390px;
+  height: 400px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 8px;
+}
+
+.modalTitle-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  gap: 30px;
+  width: 700px;
+  padding-top: 20px;
+}
+
+.modalTitle{
+  font-size: 40px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.modalYear{
+  font-size: 20px;
+  color: gray;
+  font-weight: bold;
+}
+
+.modalDescription{
+  font-size: 20px;
+  font-weight: normal;
+  color: aliceblue;
+  box-sizing: border-box;
+  width: 500px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: pre-wrap;
+}
+
+.modalTicketbutton{
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 8px 20px;
+  width: auto;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.cross{
+  padding-top: 370px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}

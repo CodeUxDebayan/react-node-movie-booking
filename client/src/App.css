@@ -1,0 +1,9 @@
+.App{
+    background-image: url('./components/styles/images/Bg.png');
+    width: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+
